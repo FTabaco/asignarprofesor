@@ -1,13 +1,79 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #a7c1c7c2; /* Fondo más suave */
+  font-family: Arial, sans-serif;
+  position: relative; /* Añadido para permitir la posición absoluta del botón */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  text-align: center;
+  font-family: Arial Black;
+  font-weight: bold;
+  font-size: 30px;
+  color: #202020; /* Color de fondo del texto */
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+}
+
+.asignatura {
+  background-color: #ece474; 
+  color: #000000;
+  padding: 3px; /* Reducir el padding */
+  margin: 5px;
+  border-radius: 3px; /* Reducir el radio del borde */
+  cursor: pointer;
+  width: 25px; 
+  height: 25px;
+}
+
+.profesor {
+  background-color: #b69bf5; /* Azul suave */
+  padding: 20px; /* Aumentar el padding */
+  margin: 5px;
+  border: 1px solid #363636; /* Borde más claro */
+  border-radius: 15px; /* Aumentar el radio del borde */
+  cursor: pointer;
+  display: inline-block; /* Mostrar profesores en línea */
+  transition: all 0.3s ease; /* Añadir transición suave */
+  width: 160px; /* Hacer las casillas de profesores más grandes */
+  height: 140px; /* Hacer las casillas de profesores más grandes */
+}
+
+/* Cambiar color al soltar la asignatura en el profesor */
+.profesor.drop-target {
+  background-color: #aed58181; /* Verde claro */
+}
+
+/* Botón para cambiar a profesores de secundaria */
+button {
+  position: absolute; /* Posicionar de manera absoluta */
+  top: 20px; /* Espacio desde la parte superior */
+  right: 20px; /* Espacio desde el lado derecho */
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button:hover {
+  background-color: #45a049; /* Verde más oscuro */
+  transform: scale(1.05); /* Aumentar tamaño */
+}
+
+/* Efecto al hacer clic en el botón */
+button:active {
+  background-color: #3e8e41; /* Verde aún más oscuro */
+  transform: scale(0.95); /* Reducir tamaño */
+}
+
+/* Hacer la página totalmente responsiva */
+@media screen and (min-width: 768px) {
+  /* Para pantallas más grandes, dividir en dos columnas */
+  .profesor, .asignatura {
+    width: 120px; /* Ajustar tamaño para pantallas más grandes */
+    height: 100px;
+  }
 }
