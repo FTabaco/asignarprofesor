@@ -1,0 +1,190 @@
+{
+    "profesoresSecundaria": [
+      {
+        "GRUPO": "M1SMR",
+        "MODULO": "Aplicaciones Web",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "M1SMR",
+        "MODULO": "Redes Locales",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "M2SMR",
+        "MODULO": "FCT",
+        "HORAS": 3
+      },
+      {
+        "GRUPO": "M2SMR",
+        "MODULO": "Seguridad Informática",
+        "HORAS": 5
+      },
+      {
+        "GRUPO": "M2SMR",
+        "MODULO": "Servicios en Red",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "S1DAM",
+        "MODULO": "Bases de Datos",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "S1DAM",
+        "MODULO": "Entornos de Desarrollo",
+        "HORAS": 3
+      },
+      {
+        "GRUPO": "S1DAM",
+        "MODULO": "Lenguajes de Marcas",
+        "HORAS": 4
+      },
+      {
+        "GRUPO": "S1DAM",
+        "MODULO": "Programación",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "S1DAW",
+        "MODULO": "Bases de Datos",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "S1DAW",
+        "MODULO": "Entornos de Desarrollo",
+        "HORAS": 3
+      },
+      {
+        "GRUPO": "S1DAW",
+        "MODULO": "Lenguajes de Marcas",
+        "HORAS": 4
+      },
+      {
+        "GRUPO": "S1DAW",
+        "MODULO": "Programación",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "S2DAM",
+        "MODULO": "Acceso a Datos",
+        "HORAS": 7
+      },
+      {
+        "GRUPO": "S2DAM",
+        "MODULO": "Programación Multimedia",
+        "HORAS": 5
+      },
+      {
+        "GRUPO": "S2DAW",
+        "MODULO": "Despliegue de Aplicaciones Web",
+        "HORAS": 5
+      },
+      {
+        "GRUPO": "S2DAW",
+        "MODULO": "Desarrollo Web en Entorno Servidor",
+        "HORAS": 9
+      },
+      {
+        "GRUPO": "S2DAW",
+        "MODULO": "FCT",
+        "HORAS": 3
+      },
+      {
+        "GRUPO": "VM1SMR",
+        "MODULO": "Aplicaciones Web",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "VM1SMR",
+        "MODULO": "Redes Locales",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "VM2SMR",
+        "MODULO": "Seguridad Informática",
+        "HORAS": 5
+      },
+      {
+        "GRUPO": "VM2SMR",
+        "MODULO": "Servicios en Red",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "VS1ASIR",
+        "MODULO": "Gestión de Bases de Datos",
+        "HORAS": 4
+      },
+      {
+        "GRUPO": "VS1ASIR",
+        "MODULO": "Lenguajes de Marcas",
+        "HORAS": 4
+      },
+      {
+        "GRUPO": "VS1ASIR",
+        "MODULO": "Planificación Redes",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "VS1DAW",
+        "MODULO": "Bases de Datos",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "VS1DAW",
+        "MODULO": "Entornos de Desarrollo",
+        "HORAS": 3
+      },
+      {
+        "GRUPO": "VS1DAW",
+        "MODULO": "Lenguajes de Marcas",
+        "HORAS": 4
+      },
+      {
+        "GRUPO": "VS1DAW",
+        "MODULO": "Programación",
+        "HORAS": 6
+      },
+      {
+        "GRUPO": "VS2ASIR",
+        "MODULO": "Administración Bases de Datos",
+        "HORAS": 3
+      },
+      {
+        "GRUPO": "VS2ASIR",
+        "MODULO": "FCT una hora",
+        "HORAS": 1
+      },
+      {
+        "GRUPO": "VS2ASIR",
+        "MODULO": "FCT dos horas",
+        "HORAS": 2
+      },
+      {
+        "GRUPO": "VS2ASIR",
+        "MODULO": "Implantación Aplicaciones Web",
+        "HORAS": 5
+      },
+      {
+        "GRUPO": "VS2ASIR",
+        "MODULO": "Seguridad y Alta Disponibilidad",
+        "HORAS": 5
+      },
+      {
+        "GRUPO": "VS2ASIR",
+        "MODULO": "Servicios de Red e Internet",
+        "HORAS": 7
+      },
+      {
+        "GRUPO": "VS2DAW",
+        "MODULO": "Despliegue de Aplicaciones Web",
+        "HORAS": 5
+      },
+      {
+        "GRUPO": "VS2DAW",
+        "MODULO": "Desarrollo Web en Entorno Servidor",
+        "HORAS": 9
+      }
+    ]
+  }
+  

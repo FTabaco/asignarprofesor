@@ -1,0 +1,208 @@
+{
+    "modulos": [
+        {
+            "modulosTecnicos": [
+                {
+                    "GRUPO": "E1CB",
+                    "MODULO": "Análisis forense informático.",
+                    "HORAS": 4
+                },
+                {
+                    "GRUPO": "E1CB",
+                    "MODULO": "Bastionado de redes y sistemas",
+                    "HORAS": 6
+                },
+                {
+                    "GRUPO": "E1CB",
+                    "MODULO": "Puesta en producción segura",
+                    "HORAS": 4
+                },
+                {
+                    "GRUPO": "FB1IO",
+                    "MODULO": "Montaje y mantenimiento S y C.I.",
+                    "HORAS": 10
+                },
+                {
+                    "GRUPO": "FB1IO",
+                    "MODULO": "Ofimática y archivo documental",
+                    "HORAS": 8
+                },
+                {
+                    "GRUPO": "FB1IO",
+                    "MODULO": "Tutoría",
+                    "HORAS": 1
+                },
+                {
+                    "GRUPO": "FB2IO",
+                    "MODULO": "Oper. aux para la conf y explotación",
+                    "HORAS": 8
+                },
+                {
+                    "GRUPO": "FB2IO",
+                    "MODULO": "FCT 3 Horas",
+                    "HORAS": 3
+                },
+                {
+                    "GRUPO": "FB2IO",
+                    "MODULO": "Instalación y Mantenimiento Redes",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "FB1IO",
+                    "MODULO": "Tutoría",
+                    "HORAS": 1
+                },
+                {
+                    "GRUPO": "M1SMR",
+                    "MODULO": "Montaje Equipos",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "M1SMR",
+                    "MODULO": "Sistemas Operativos Monopuesto",
+                    "HORAS": 6
+                },
+                {
+                    "GRUPO": "M2SMR",
+                    "MODULO": "Aplicaciones Ofimáticas",
+                    "HORAS": 9
+                },
+                {
+                    "GRUPO": "M2SMR",
+                    "MODULO": "Sistemas Operativos en Red",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "S1DAM",
+                    "MODULO": "Sistemas Informáticos",
+                    "HORAS": 6
+                },
+                {
+                    "GRUPO": "S1DAW",
+                    "MODULO": "Sistemas Informáticos",
+                    "HORAS": 6
+                },
+                {
+                    "GRUPO": "S1DAW",
+                    "MODULO": "Sistemas Informáticos(BILINGÜE)",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "S2DAM",
+                    "MODULO": "Desarrollo de Interface",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "S2DAM",
+                    "MODULO": "FCT 1 hora",
+                    "HORAS": 1
+                },
+                {
+                    "GRUPO": "S2DAM",
+                    "MODULO": "FCT 2 horas",
+                    "HORAS": 2
+                },
+                {
+                    "GRUPO": "S2DAM",
+                    "MODULO": "Sistemas de Gestión Empresarial",
+                    "HORAS": 5
+                },
+                {
+                    "GRUPO": "VS2DAW",
+                    "MODULO": "Diseño de Interfaces Web",
+                    "HORAS": 6
+                },
+                {
+                    "GRUPO": "VS2DAW",
+                    "MODULO": "Desarrollo Web de Entorno Cliente",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "VM1SMR",
+                    "MODULO": "Montaje Equipos",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "VM1SMR",
+                    "MODULO": "Sistemas Operativos Monopuesto",
+                    "HORAS": 6
+                },
+                {
+                    "GRUPO": "VM2SMR",
+                    "MODULO": "Aplicaciones Ofimáticas",
+                    "HORAS": 9
+                },
+                {
+                    "GRUPO": "VM2SMR",
+                    "MODULO": "FCT 1 hora",
+                    "HORAS": 1
+                },
+                {
+                    "GRUPO": "VM2SMR",
+                    "MODULO": "FCT 2 horas",
+                    "HORAS": 2
+                },
+                {
+                    "GRUPO": "VM2SMR",
+                    "MODULO": "Sistemas Operativos en Red",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "VS1ASIR",
+                    "MODULO": "Fundamentos de Hardware",
+                    "HORAS": 4
+                },
+                {
+                    "GRUPO": "VS1ASIR",
+                    "MODULO": "Implantación Sistemas Operativos",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "VS1DAW",
+                    "MODULO": "Sistemas Informáticos",
+                    "HORAS": 6
+                },
+                {
+                    "GRUPO": "VS2ASIR",
+                    "MODULO": "Administración de Sistemas Operativos",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "VS2DAW",
+                    "MODULO": "Diseño de Interfaces Web",
+                    "HORAS": 6
+                },
+                {
+                    "GRUPO": "VS2DAW",
+                    "MODULO": "Desarrollo Web de Entorno Cliente",
+                    "HORAS": 7
+                },
+                {
+                    "GRUPO": "VS2DAW",
+                    "MODULO": "FCT 1 hora",
+                    "HORAS": 1
+                },
+                {
+                    "GRUPO": "VS2DAW",
+                    "MODULO": "FCT 2 horas",
+                    "HORAS": 2
+                },
+                {
+                    "GRUPO": "E1VR",
+                    "MODULO": "Diseño gráfico 2D y 3D.",
+                    "HORAS": 4
+                },
+                {
+                    "GRUPO": "E1VR",
+                    "MODULO": "Programación y motores de videojuegos",
+                    "HORAS": 5
+                },
+                {
+                    "GRUPO": "E1VR",
+                    "MODULO": "Realidad virtual y realidad aumentada",
+                    "HORAS": 3
+                }
+            ]
+        }
+    ]
+}

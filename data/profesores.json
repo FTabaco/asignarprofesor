@@ -1,0 +1,119 @@
+{
+  "profesoresTecnicos": {
+    "diurno": [
+      {
+        "nombre": "JESÚS PÉREZ",
+        "horas_semanales": 19,
+        "modulos": [
+          "Aplicaciones Ofimáticas",
+          "Ofimática y archivo documental",
+          "Tutoría",
+          "Sistemas Informáticos(BILINGÜE)",
+          "Desarrollo Web de Entorno Cliente",
+          "Desarrollo de Interface"
+        ]
+      },
+      {
+        "nombre": "JE",
+        "horas_semanales": 19,
+        "modulos": [
+            "Desarrollo en entorno cliente",
+            "Sistemas informaticos"
+        ]
+      },
+      {
+        "nombre": "TOMÁS",
+        "horas_semanales": 19,
+        "modulos": [
+          "Montaje Equipos",
+          "Sistemas de Gestión Empresarial",
+          "FCT 2 horas",
+          "Sistemas Informáticos",
+          "FCT 1 hora"
+        ]
+      }
+    ],
+    "vespertino": [
+      {
+        "nombre": "NACHO",
+        "horas_semanales": 19,
+        "modulos": [
+          "Oper. aux para la conf y explotación",
+          "JEFE EST. GEN"
+        ]
+      },
+      {
+        "nombre": "OSCAR",
+        "horas_semanales": 19,
+        "modulos": [
+          "JEFE DEPT",
+          "Reducción",
+          "Sistemas Operativos en Red",
+          "Instalación y Mantenimiento Redes",
+          "FCT 3 Horas",
+          "Tutoría",
+          "Análisis forense informático"
+        ]
+      },
+    
+      {
+        "nombre": "Marisa",
+        "horas_semanales": 19,
+        "modulos": [
+          "Montaje y mantenimiento S y C.I.",
+          "Diseño de Interfaces Web",
+          "Puesta en producción segura",
+          "Sistemas Informáticos"
+        ]
+      },
+      {
+        "nombre": "SEBAS",
+        "horas_semanales": 19,
+        "modulos": [
+          "Desarrollo Web de Entorno Cliente",
+          "Implantación Sistemas Operativos",
+          "Programación y motores de videojuegos",
+          "FCT 1 hora"
+        ]
+      },
+      {
+        "nombre": "RODRIGO",
+        "horas_semanales": 19,
+        "modulos": [
+          "Montaje Equipos",
+          "Aplicaciones Ofimáticas",
+          "Fundamentos de Hardware",
+          "FCT 1 hora"
+        ]
+      },
+      {
+        "nombre": "JOSEGA",
+        "horas_semanales": 19,
+        "modulos": [
+          "Diseño de Interfaces Web",
+          "Sistemas Operativos en Red",
+          "Realidad virtual y realidad aumentada",
+          "FCT 2 horas",
+          "FCT 2 horas"
+        ]
+      },
+      {
+        "nombre": "FERMIN",
+        "horas_semanales": 19,
+        "modulos": [
+          "Administración de Sistemas Operativos",
+          "Bastionado de redes y sistemas",
+          "Sistemas Informáticos"
+        ]
+      },
+      {
+        "nombre": "ELENA",
+        "horas_semanales": 19,
+        "modulos": [
+          "Sistemas Operativos Monopuesto",
+          "Diseño gráfico 2D y 3D"
+        ]
+      }
+    ]
+  }
+}
