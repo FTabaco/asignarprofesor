@@ -1,6 +1,6 @@
 import interact from 'interactjs';
 import React, { useEffect } from 'react';
-import { createRoot } from 'react-dom/client'; // Importa createRoot
+import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
@@ -86,6 +86,7 @@ function initializeInteractions() {
         }
       }
     },
+    //función devuelve cuando se suelta la asignatura
     ondrop: function (event) {
       event.relatedTarget.textContent = 'Asignatura asignada a ' + event.target.textContent;
     },
@@ -104,7 +105,4 @@ function Root() {
   return <App />;
 }
 
-// Utiliza createRoot en lugar de ReactDOM.render
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(<Root />);
+ReactDOM.render(<Root />, document.getElementById('root'));

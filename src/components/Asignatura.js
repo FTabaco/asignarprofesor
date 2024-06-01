@@ -1,8 +1,13 @@
+// src/components/Asignatura.js
 import React from 'react';
-import '../index.css';
 
-const Asignatura = ({ id, name }) => {
-  return <div className="asignatura" id={id}>{name}</div>;
+const Asignatura = ({ name, hours }) => {
+  return (
+    <div className="asignatura">
+      <p>{name}</p>
+      <p>Horas: {hours}</p>
+    </div>
+  );
 };
 
 export default Asignatura;

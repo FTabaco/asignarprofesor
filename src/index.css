@@ -10,18 +10,68 @@ h1 {
   font-weight: bold;
   font-size: 30px;
   color: #202020; /* Color de fondo del texto */
-  text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  padding: 10px;
+  margin-bottom: 20px; /* Espacio debajo de los controles */
+}
+
+.transparent-card {
+  background: rgba(255, 255, 255, 0); /* Fondo transparente */
+  box-shadow: none; /* Sin sombra */
+  border-radius: 10px;
+}
+
+.select-label {
+  margin: 0 10px; /* Espaciado lateral entre los selectores */
+}
+
+.styled-select {
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  width: 200px;
+}
+
+.styled-select:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.styled-select:focus {
+  border-color: #777;
 }
 
 .asignatura {
-  background-color: #ece474; 
+  background-color: #ece474; /* Mantener el color de fondo original */
   color: #000000;
   padding: 3px; /* Reducir el padding */
   margin: 5px;
   border-radius: 3px; /* Reducir el radio del borde */
   cursor: pointer;
-  width: 25px; 
+  width: 25px;
   height: 25px;
+  display: flex; /* Utilizar flexbox */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+.asignatura.dragging {
+  background-color: transparent; /* Hacer el fondo transparente mientras se arrastra */
+}
+
+.asignatura.dragging::after {
+  content: attr(data-name); /* Mostrar el nombre de la asignatura */
 }
 
 .profesor {
@@ -31,15 +81,22 @@ h1 {
   border: 1px solid #363636; /* Borde más claro */
   border-radius: 15px; /* Aumentar el radio del borde */
   cursor: pointer;
-  display: inline-block; /* Mostrar profesores en línea */
+  display: inline-flex; /* Mostrar profesores en línea como flexbox */
+  flex-direction: column; /* Apilar las asignaturas verticalmente */
+  align-items: center; /* Centrar las asignaturas horizontalmente */
+  gap: 5px; /* Espaciado entre las asignaturas */
   transition: all 0.3s ease; /* Añadir transición suave */
-  width: 160px; /* Hacer las casillas de profesores más grandes */
-  height: 140px; /* Hacer las casillas de profesores más grandes */
+  width: fit-content; /* Ajustar ancho al contenido */
 }
 
 /* Cambiar color al soltar la asignatura en el profesor */
 .profesor.drop-target {
   background-color: #aed58181; /* Verde claro */
+}
+
+/* Aumentar tamaño de la tarjeta cuando se suelta una asignatura */
+.profesor.drop-target:hover {
+  transform: scale(1.1);
 }
 
 /* Botón para cambiar a profesores de secundaria */
@@ -72,7 +129,8 @@ button:active {
 /* Hacer la página totalmente responsiva */
 @media screen and (min-width: 768px) {
   /* Para pantallas más grandes, dividir en dos columnas */
-  .profesor, .asignatura {
+  .profesor,
+  .asignatura {
     width: 120px; /* Ajustar tamaño para pantallas más grandes */
     height: 100px;
   }

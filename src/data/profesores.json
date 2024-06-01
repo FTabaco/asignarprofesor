@@ -22,19 +22,6 @@
         ]
       },
       {
-        "nombre": "TOMÁS",
-        "horas_semanales": 19,
-        "modulos": [
-          "Montaje Equipos",
-          "Sistemas de Gestión Empresarial",
-          "FCT 2 horas",
-          "Sistemas Informáticos",
-          "FCT 1 hora"
-        ]
-      }
-    ],
-    "vespertino": [
-      {
         "nombre": "NACHO",
         "horas_semanales": 19,
         "modulos": [
@@ -65,6 +52,21 @@
           "Sistemas Informáticos"
         ]
       },
+      {
+        "nombre": "TOMÁS",
+        "horas_semanales": 19,
+        "modulos": [
+          "Montaje Equipos",
+          "Sistemas de Gestión Empresarial",
+          "FCT 2 horas",
+          "Sistemas Informáticos",
+          "FCT 1 hora"
+        ]
+      }
+      
+    ],
+    "vespertino": [
+    
       {
         "nombre": "SEBAS",
         "horas_semanales": 19,
