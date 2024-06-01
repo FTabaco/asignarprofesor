@@ -7,10 +7,10 @@ import './index.css';
 function App() {
   return (
     <Router>
-      <Routes> {/* Cambiado de Switch a Routes no se si sera por la versión pero me da error con switch */}
+      <Routes>
         <Route path="/tecnicos" element={<Tecnicos />} />
         <Route path="/secundaria" element={<Secundaria />} />
-        <Route path="/" exact element={<Tecnicos />} />
+        <Route path="/" element={<Tecnicos />} />
       </Routes>
     </Router>
   );

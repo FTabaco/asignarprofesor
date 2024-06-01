@@ -18,7 +18,7 @@
         "horas_semanales": 19,
         "modulos": [
             "Desarrollo en entorno cliente",
-            "Sistemas informaticos"
+            "Sistemas informáticos"
         ]
       },
       {
@@ -55,7 +55,6 @@
           "Análisis forense informático"
         ]
       },
-    
       {
         "nombre": "Marisa",
         "horas_semanales": 19,
@@ -93,7 +92,6 @@
           "Diseño de Interfaces Web",
           "Sistemas Operativos en Red",
           "Realidad virtual y realidad aumentada",
-          "FCT 2 horas",
           "FCT 2 horas"
         ]
       },

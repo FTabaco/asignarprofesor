@@ -1,6 +1,6 @@
 import interact from 'interactjs';
 import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client'; // Importa createRoot
 import App from './App';
 import './index.css';
 
@@ -104,4 +104,7 @@ function Root() {
   return <App />;
 }
 
-ReactDOM.render(<Root />, document.getElementById('root'));
+// Utiliza createRoot en lugar de ReactDOM.render
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<Root />);
