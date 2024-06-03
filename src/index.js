@@ -2,21 +2,17 @@ import interact from 'interactjs';
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
+import './index.css';function dragMoveListener(event) {
+  const target = event.target;
+  const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+  const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
-function dragMoveListener(event) {
-  var target = event.target;
-  var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
-  var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-
-  target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+  target.style.webkitTransform = target.style.transform = `translate(${x}px, ${y}px)`;
   target.setAttribute('data-x', x);
   target.setAttribute('data-y', y);
 }
 
 function initializeInteractions() {
-  var numAsignaturasPorProfesor = {};
-
   interact('.asignatura').draggable({
     inertia: true,
     modifiers: [
@@ -27,28 +23,7 @@ function initializeInteractions() {
     ],
     autoScroll: true,
     listeners: {
-      move: dragMoveListener,
-      end: function (event) {
-        var target = event.target;
-        var profesor = event.relatedTarget;
-
-        if (event.dropzone) {
-          target.style.backgroundColor = '#aed581'; // Verde claro
-        } else {
-          target.style.backgroundColor = '#ffeb3b'; // Amarillo pastel
-        }
-
-        if (profesor) {
-          if (numAsignaturasPorProfesor[profesor.id]) {
-            numAsignaturasPorProfesor[profesor.id]++;
-          } else {
-            numAsignaturasPorProfesor[profesor.id] = 1;
-          }
-
-          profesor.style.width = (140 + numAsignaturasPorProfesor[profesor.id] * 10) + 'px';
-          profesor.style.height = (140 + numAsignaturasPorProfesor[profesor.id] * 10) + 'px';
-        }
-      }
+      move: dragMoveListener
     }
   });
 
@@ -59,40 +34,28 @@ function initializeInteractions() {
       event.target.classList.add('drop-active');
     },
     ondragenter: function (event) {
-      var draggableElement = event.relatedTarget;
-      var dropzoneElement = event.target;
+      const draggableElement = event.relatedTarget;
+      const dropzoneElement = event.target;
 
       dropzoneElement.classList.add('drop-target');
       draggableElement.classList.add('can-drop');
-      draggableElement.textContent = 'Asignatura dentro';
     },
     ondragleave: function (event) {
-      var draggableElement = event.relatedTarget;
-      var dropzoneElement = event.target;
+      const draggableElement = event.relatedTarget;
+      const dropzoneElement = event.target;
 
       dropzoneElement.classList.remove('drop-target');
       draggableElement.classList.remove('can-drop');
-      draggableElement.textContent = 'Asignatura fuera';
-
-      if (numAsignaturasPorProfesor[dropzoneElement.id]) {
-        numAsignaturasPorProfesor[dropzoneElement.id]--;
-
-        if (numAsignaturasPorProfesor[dropzoneElement.id] > 0) {
-          dropzoneElement.style.width = (140 + numAsignaturasPorProfesor[dropzoneElement.id] * 10) + 'px';
-          dropzoneElement.style.height = (140 + numAsignaturasPorProfesor[dropzoneElement.id] * 10) + 'px';
-        } else {
-          dropzoneElement.style.width = '140px';
-          dropzoneElement.style.height = '140px';
-        }
-      }
     },
-    //función devuelve cuando se suelta la asignatura
     ondrop: function (event) {
-      event.relatedTarget.textContent = 'Asignatura asignada a ' + event.target.textContent;
-    },
-    ondropdeactivate: function (event) {
-      event.target.classList.remove('drop-active');
-      event.target.classList.remove('drop-target');
+      const profesor = event.target;
+      const asignatura = event.relatedTarget;
+
+      // Establecer la posición relativa de la asignatura dentro del profesor
+      const rect = profesor.getBoundingClientRect();
+      asignatura.style.position = 'absolute';
+      asignatura.style.left = event.clientX - rect.left + 'px';
+      asignatura.style.top = event.clientY - rect.top + 'px';
     }
   });
 }

@@ -18,7 +18,7 @@ const Secundaria = () => {
     }
 
     if (modulosSecundariaData && modulosSecundariaData.modulosSecundaria) {
-      const grupos = [...new Set(modulosSecundariaData.modulosSecundaria.map(modulo => modulo.GRUPO))];
+      const grupos = ['SIN GRUPO', ...new Set(modulosSecundariaData.modulosSecundaria.map(modulo => modulo.GRUPO))];
       setGruposDisponibles(grupos);
       if (grupoAsignaturas === '' && grupos.length > 0) {
         setGrupoAsignaturas(grupos[0]);
@@ -28,7 +28,12 @@ const Secundaria = () => {
 
   useEffect(() => {
     if (grupoAsignaturas !== '') {
-      const modulosFiltrados = modulosSecundariaData.modulosSecundaria.filter(modulo => modulo.GRUPO === grupoAsignaturas);
+      let modulosFiltrados;
+      if (grupoAsignaturas === 'SIN GRUPO') {
+        modulosFiltrados = modulosSecundariaData.modulosSecundaria;
+      } else {
+        modulosFiltrados = modulosSecundariaData.modulosSecundaria.filter(modulo => modulo.GRUPO === grupoAsignaturas);
+      }
       setModulosSecundaria(modulosFiltrados);
     }
   }, [grupoAsignaturas]);

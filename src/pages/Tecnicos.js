@@ -18,7 +18,7 @@ const Tecnicos = () => {
     }
 
     if (modulosData && modulosData.modulos && modulosData.modulos[0].modulosTecnicos) {
-      const grupos = [...new Set(modulosData.modulos[0].modulosTecnicos.map(modulo => modulo.GRUPO))];
+      const grupos = ['SIN GRUPO', ...new Set(modulosData.modulos[0].modulosTecnicos.map(modulo => modulo.GRUPO))];
       setGruposDisponibles(grupos);
       if (grupoAsignaturas === '' && grupos.length > 0) {
         setGrupoAsignaturas(grupos[0]);
@@ -28,7 +28,12 @@ const Tecnicos = () => {
 
   useEffect(() => {
     if (grupoAsignaturas !== '') {
-      const modulosFiltrados = modulosData.modulos[0].modulosTecnicos.filter(modulo => modulo.GRUPO === grupoAsignaturas);
+      let modulosFiltrados;
+      if (grupoAsignaturas === 'SIN GRUPO') {
+        modulosFiltrados = modulosData.modulos[0].modulosTecnicos;
+      } else {
+        modulosFiltrados = modulosData.modulos[0].modulosTecnicos.filter(modulo => modulo.GRUPO === grupoAsignaturas);
+      }
       setModulosTecnicos(modulosFiltrados);
     }
   }, [grupoAsignaturas]);

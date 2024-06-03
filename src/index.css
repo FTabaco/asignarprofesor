@@ -1,7 +1,8 @@
 body {
-  background-color: #a7c1c7c2; /* Fondo más suave */
+  background-image: url("images/fondomovimientopng.png");
+  background-size: cover;
   font-family: Arial, sans-serif;
-  position: relative; /* Añadido para permitir la posición absoluta del botón */
+  position: relative;
 }
 
 h1 {
@@ -9,27 +10,27 @@ h1 {
   font-family: Arial Black;
   font-weight: bold;
   font-size: 30px;
-  color: #202020; /* Color de fondo del texto */
+  color: #202020;
   text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
 }
 
 .controls {
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  margin-bottom: 20px; /* Espacio debajo de los controles */
+  margin-bottom: 20px;
 }
 
 .transparent-card {
-  background: rgba(255, 255, 255, 0); /* Fondo transparente */
-  box-shadow: none; /* Sin sombra */
+  background: rgba(255, 255, 255, 0);
+  box-shadow: none;
   border-radius: 10px;
 }
 
 .select-label {
-  margin: 0 10px; /* Espaciado lateral entre los selectores */
+  margin: 0 10px;
 }
 
 .styled-select {
@@ -53,59 +54,71 @@ h1 {
 }
 
 .asignatura {
-  background-color: #ece474; /* Mantener el color de fondo original */
+  background-color: #74ecbe;
   color: #000000;
-  padding: 3px; /* Reducir el padding */
+  padding: 5px;
   margin: 5px;
-  border-radius: 3px; /* Reducir el radio del borde */
+  border-radius: 3px;
   cursor: pointer;
-  width: 25px;
-  height: 25px;
-  display: flex; /* Utilizar flexbox */
-  align-items: center; /* Centrar verticalmente */
-  justify-content: center; /* Centrar horizontalmente */
+  width: fit-content;
+  height: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .asignatura.dragging {
-  background-color: transparent; /* Hacer el fondo transparente mientras se arrastra */
+  background-color: transparent;
 }
 
 .asignatura.dragging::after {
-  content: attr(data-name); /* Mostrar el nombre de la asignatura */
+  content: attr(data-name);
 }
 
 .profesor {
-  background-color: #b69bf5; /* Azul suave */
-  padding: 20px; /* Aumentar el padding */
+  background-color: #34827e;
+  padding: 40px;
   margin: 5px;
-  border: 1px solid #363636; /* Borde más claro */
-  border-radius: 15px; /* Aumentar el radio del borde */
+  border: 1px solid #363636;
+  border-radius: 15px;
   cursor: pointer;
-  display: inline-flex; /* Mostrar profesores en línea como flexbox */
-  flex-direction: column; /* Apilar las asignaturas verticalmente */
-  align-items: center; /* Centrar las asignaturas horizontalmente */
-  gap: 5px; /* Espaciado entre las asignaturas */
-  transition: all 0.3s ease; /* Añadir transición suave */
-  width: fit-content; /* Ajustar ancho al contenido */
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  width: fit-content;
+  color: aliceblue;
+  position: relative;
 }
 
-/* Cambiar color al soltar la asignatura en el profesor */
+.profesor .asignaturas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.profesor .asignaturas-container .asignatura {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .profesor.drop-target {
-  background-color: #aed58181; /* Verde claro */
+  background-color: #aed58181;
 }
 
-/* Aumentar tamaño de la tarjeta cuando se suelta una asignatura */
 .profesor.drop-target:hover {
   transform: scale(1.1);
 }
 
-/* Botón para cambiar a profesores de secundaria */
 button {
-  position: absolute; /* Posicionar de manera absoluta */
-  top: 20px; /* Espacio desde la parte superior */
-  right: 20px; /* Espacio desde el lado derecho */
+  position: absolute;
+  top: 20px;
+  right: 20px;
   padding: 10px 20px;
-  background-color: #4CAF50; /* Verde */
+  background-color: #45a09e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -114,24 +127,20 @@ button {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Efecto al pasar el ratón sobre el botón */
 button:hover {
-  background-color: #45a049; /* Verde más oscuro */
-  transform: scale(1.05); /* Aumentar tamaño */
+  background-color: #74ecbe;
+  transform: scale(1.05);
 }
 
-/* Efecto al hacer clic en el botón */
 button:active {
-  background-color: #3e8e41; /* Verde aún más oscuro */
-  transform: scale(0.95); /* Reducir tamaño */
+  background-color: #3e8e41;
+  transform: scale(0.95);
 }
 
-/* Hacer la página totalmente responsiva */
 @media screen and (min-width: 768px) {
-  /* Para pantallas más grandes, dividir en dos columnas */
   .profesor,
   .asignatura {
-    width: 120px; /* Ajustar tamaño para pantallas más grandes */
+    width: 120px;
     height: 100px;
   }
 }
