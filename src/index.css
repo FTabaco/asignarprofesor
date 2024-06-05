@@ -50,7 +50,6 @@ h1 {
 
 .styled-select:hover {
   background-color: #45a09ee8;
-  
 }
 
 .styled-select:focus {
@@ -65,12 +64,22 @@ h1 {
   margin: 5px;
   border-radius: 3px;
   cursor: pointer;
-  width: fit-content;
+  width: 140px; /* Aumentamos el ancho */
   height: fit-content;
   display: inline-flex; /* Mostrar las asignaturas en línea */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; /* Permitir que el texto se ajuste al tamaño del contenedor */
+  position: relative; /* Añadimos posición relativa */
+}
+
+.asignatura p {
+  text-align: center; /* Centramos el texto */
+  overflow: hidden; /* Evita que el texto se salga del recuadro */
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+  max-width: 100%; /* Evita que el texto sobresalga del contenedor */
+  margin: 0; /* Elimina el margen para un mejor ajuste */
+  padding: 0; /* Elimina el relleno para un mejor ajuste */
 }
 
 .asignatura.dragging {
@@ -146,7 +155,7 @@ button:active {
 @media screen and (min-width: 768px) {
   .profesor,
   .asignatura {
-    width: 120px;
+    width: 160px; /* Aumentamos el ancho */
     height: 100px;
   }
 }
